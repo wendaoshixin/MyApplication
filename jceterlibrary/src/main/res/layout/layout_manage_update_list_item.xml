@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/update_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp_16"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingEnd="@dimen/dp_16"
+    android:paddingRight="@dimen/dp_16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="@string/empty"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="The Shine Song"
+                android:textColor="@color/color_161616"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/layout_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_02"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxEms="7"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Ver7.86"
+                    android:textColor="@color/color_747474"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/h_margin"
+                    android:layout_width="@dimen/dp_01"
+                    android:layout_height="@dimen/dp_08"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp_04"
+                    android:layout_marginLeft="@dimen/dp_04"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="@dimen/dp_04"
+                    android:layout_marginRight="@dimen/dp_04"
+                    android:background="@color/color_747474"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/tv_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="6.50MB"
+                    android:textColor="@color/color_747474"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@null"
+            android:contentDescription="@string/empty"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/btn_download_more_down_n"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btn_operation"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/selector_download_btn_blue"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dp_04"
+            android:paddingLeft="@dimen/dp_04"
+            android:paddingEnd="@dimen/dp_04"
+            android:paddingRight="@dimen/dp_04"
+            android:text="@string/text_update"
+            android:textColor="@color/color_palmplay_white"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_ignore"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_36"
+        android:layout_gravity="right|end|center_vertical"
+        android:gravity="right|end|center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_uninstall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:padding="@dimen/dp_05"
+            android:text="@string/text_uninstall"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_14" />
+
+        <View
+            android:layout_width="@dimen/dp_01"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dp_08"
+            android:layout_marginBottom="@dimen/dp_08"
+            android:background="@color/color_868892" />
+
+        <TextView
+            android:id="@+id/tv_ignore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:padding="@dimen/dp_05"
+            android:text="@string/text_ignore"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_divider_line_height"
+        android:background="#f0f0f0"
+        android:visibility="visible" />
+</LinearLayout><!-- TOP SECRET -->

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_network_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:background="#EDEEF0"
+    android:clickable="false"
+    android:visibility="visible"
+    android:layout_alignParentStart="true">
+
+    <ImageView
+        android:id="@+id/iv_network_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/empty" />
+
+    <TextView
+        android:id="@+id/tv_network_error_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_network_error"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/text_network_error"
+        android:textColor="#8a8a8a"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_network_error_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/selector_download_btn_blue"
+        android:clickable="true"
+        android:gravity="center"
+        android:minHeight="32dp"
+        android:minWidth="96dp"
+        android:text="@string/text_retry"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_network_configure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:drawablePadding="8dp"
+        android:drawableRight="@mipmap/arr_list"
+        android:gravity="left|start|center_vertical"
+        android:minHeight="40dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="4dp"
+        android:text="@string/text_configure_network"
+        android:textColor="@android:color/black"
+        android:drawableEnd="@mipmap/arr_list"
+        android:paddingStart="8dp"
+        android:paddingEnd="16dp"/>
+
+</RelativeLayout>
+ <!-- TOP SECRET -->

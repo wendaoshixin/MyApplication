@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="selected_view" type="id"/>
+
+    <item name="tag" type="id"/>
+    <item name="tag_expandable_text_view_reused" type="id"/>
+
+    
+    <item type="id" name="expandable_text"/>
+    <item type="id" name="expand_collapse"/>
+    
+    <item type="id" name="setting_arrow"/>
+    <item type="id" name="waveheadview_up_head_id" />
+    
+    
+</resources>
+<!-- TOP SECRET -->

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <!--title部分-->
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_nav">
+
+        <ImageView
+            android:id="@+id/layot_detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/selector_title_img_back" />
+
+
+        <TextView
+            android:id="@+id/layot_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/layot_detail_back"
+            android:layout_toRightOf="@+id/layot_detail_back"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/font_size_xbig"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <com.megore.play.widget.customview.MyScrollView
+        android:id="@+id/sv_detail_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:fadeScrollbars="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- product info -->
+            <RelativeLayout
+                android:id="@+id/rl_app_info"
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="16dp">
+                <!--android:background="@color/text_color_white"-->
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/dp_0"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toEndOf="@+id/iv_icon"
+                    android:layout_toRightOf="@+id/iv_icon"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left|start|center_vertical"
+                        android:maxLines="2"
+                        android:textAlignment="viewStart"
+                        android:textColor="#141414"
+                        android:textSize="@dimen/sp_16"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_vertical|start|left"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_score"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_star_yellow"
+                            android:drawableStart="@mipmap/img_home_star_18"
+                            android:drawableLeft="@mipmap/img_home_star_18"
+                            android:drawablePadding="4dp"
+                            android:gravity="center"
+                            android:lineSpacingExtra="0dp"
+                            android:minWidth="38dp"
+                            android:paddingStart="4dp"
+                            android:paddingLeft="4dp"
+                            android:paddingEnd="4dp"
+                            android:paddingRight="4dp"
+                            android:textColor="@color/color_995e00"
+                            android:textSize="@dimen/sp_10" />
+
+                        <TextView
+                            android:id="@+id/tv_downloadcount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:drawableStart="@mipmap/img_list_download"
+                            android:drawableLeft="@mipmap/img_list_download"
+                            android:drawablePadding="4dp"
+                            android:gravity="center"
+                            android:lineSpacingExtra="0dp"
+                            android:textColor="#828282"
+                            android:textSize="@dimen/sp_11" />
+
+                        <View
+                            android:id="@+id/id_h_divider"
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/dp_08"
+                            android:layout_marginLeft="@dimen/dp_08"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="@dimen/dp_08"
+                            android:layout_marginRight="@dimen/dp_08"
+                            android:layout_marginBottom="2dp"
+                            android:background="@color/color_9a9a9a" />
+                        <!--6.78MB-->
+                        <TextView
+                            android:id="@+id/tv_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/color_828282"
+                            android:textSize="@dimen/sp_11" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout> <!-- app information -->
+
+            <!-- screenshot -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_screenshot"
+                android:layout_width="match_parent"
+                android:layout_height="182dp"
+                android:layout_marginBottom="12dp"
+                expandableTextView:autoPlaying="false"
+                expandableTextView:orientation="horizontal"
+                expandableTextView:showIndicator="false" />
+
+            <!-- expand or collapse text -->
+            <View
+                android:id="@+id/v_information_layout_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_08"
+                android:background="@color/color_f5f5f5" />
+
+            <LinearLayout
+                android:id="@+id/container_ad_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/information_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dp_60"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <!--
+                android:layout_marginTop="@dimen/dp_08"
+                android:background="@color/text_color_white"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_44"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:gravity="center_vertical"
+                    android:paddingTop="4dp"
+                    android:text="@string/text_information"
+                    android:textColor="@color/color_161616"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.megore.play.widget.customview.ExpandableTextView
+                    android:id="@+id/expand_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginEnd="@dimen/dp_12"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:background="@color/text_color_white"
+                    android:orientation="vertical"
+                    android:paddingStart="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingEnd="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="2dp"
+                    expandableTextView:animAlphaStart="1"
+                    expandableTextView:maxCollapsedLines="4">
+
+                    <TextView
+                        android:id="@id/expandable_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:gravity="left|start"
+                        android:text="godsahbljbipenojmafpdibnnlahvlksdajv;ja;lvbj;oasdjb;ojav;osadjbvilhjq;aovbjnzdfklbhjoa;nbliqegbiwqenbkljqepogbnew;l"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/color_868892"
+                        android:textSize="@dimen/sp_14" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_ver_from"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|start"
+                            android:layout_marginTop="@dimen/dp_16"
+                            android:text="@string/x_version"
+                            android:textColor="@color/color_828282"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="@dimen/dp_16"
+                            android:layout_marginEnd="@dimen/dp_12"
+                            android:layout_marginRight="@dimen/dp_12"
+                            android:background="@color/color_eeeeee" />
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@id/expand_collapse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/empty"
+                        android:paddingStart="@dimen/dp_10"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10" />
+                </com.megore.play.widget.customview.ExpandableTextView>
+            </LinearLayout>
+
+            <!-- rate it begin -->
+            <View
+                android:id="@+id/v_layout_comment_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/color_f5f5f5" />
+
+            <!--admob广告1-->
+            <LinearLayout
+                android:id="@+id/container_ad_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/color_f5f5f5" />
+
+
+            <!--admob广告2-->
+            <LinearLayout
+                android:id="@+id/container_ad_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="52dp"
+                android:background="@color/color_f5f5f5" />
+        </LinearLayout>
+    </com.megore.play.widget.customview.MyScrollView>
+
+    <!--下载按钮-->
+    <RelativeLayout
+        android:id="@+id/status_panel"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom"
+        android:background="@color/color_ffffff">
+
+        <View
+            android:id="@+id/download_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d6d6d6" />
+
+        <Button
+            android:id="@+id/btn_download"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/download_divider"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/selector_detail_downlaod_btn_blue"
+            android:maxLines="1"
+            android:text="@string/text_install"
+            android:textAllCaps="false"
+            android:textColor="@color/color_ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_network_error_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/layout_network_error" />
+    </RelativeLayout>
+</FrameLayout><!-- TOP SECRET -->

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/top_item_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/layout_featured_item_divider" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        app:layout_constraintTop_toBottomOf="@id/top_item_divider" />
+
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/layout_content"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_top"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_12"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/layout_download"
+        app:layout_constraintStart_toEndOf="@+id/iv_icon"
+        app:layout_constraintTop_toBottomOf="@id/guideline_top">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="left|start"
+            android:singleLine="true"
+            android:text="Yotube"
+            android:textColor="@color/color_303030"
+            android:textSize="@dimen/sp_14" />
+
+        <LinearLayout
+            android:id="@+id/layout_score_and_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_05"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/score_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/bg_star_yellow"
+                android:gravity="center_vertical"
+                android:minWidth="38dp"
+                android:orientation="horizontal"
+                android:paddingEnd="4dp"
+                android:paddingRight="4dp">
+
+                <ImageView
+                    android:id="@+id/iv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@mipmap/img_home_star_18" />
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="0dp"
+                    android:maxLines="1"
+                    android:text="3.7"
+                    android:textColor="@color/color_995e00"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_source_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_list_size"
+                android:gravity="center"
+                android:lineSpacingExtra="0dp"
+                android:maxLines="1"
+                android:paddingStart="6dp"
+                android:paddingLeft="6dp"
+                android:paddingEnd="6dp"
+                android:paddingRight="6dp"
+                android:text="35.26M"
+                android:textColor="@color/color_868892"
+                android:textSize="@dimen/sp_10"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout_size_and_download_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_05"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_download_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@mipmap/img_list_download"
+                    android:drawableLeft="@mipmap/img_list_download"
+                    android:drawablePadding="@dimen/dp_05"
+                    android:maxLines="1"
+                    android:text="1,235"
+                    android:textColor="@color/color_868892"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp_48"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@id/layout_content"
+        app:layout_constraintTop_toBottomOf="@id/guideline_top">
+
+        <TextView
+            android:id="@+id/tv_download"
+            android:layout_width="@dimen/dp_view_download_width"
+            android:layout_height="@dimen/dp_view_download_height"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp_08"
+            android:layout_marginLeft="@dimen/dp_08"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@drawable/selector_download_btn_blue"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dp_04"
+            android:paddingLeft="@dimen/dp_04"
+            android:paddingEnd="@dimen/dp_04"
+            android:paddingRight="@dimen/dp_04"
+            android:text="@string/text_install"
+            android:textColor="@color/color_ffffff"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+
+
+    <View
+        android:id="@+id/guideline_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <View
+        android:id="@+id/v_child_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_divider_line_height"
+        android:layout_marginStart="@dimen/dp_96"
+        android:layout_marginLeft="@dimen/dp_96"
+        android:background="@color/color_divider_line"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout><!-- TOP SECRET -->

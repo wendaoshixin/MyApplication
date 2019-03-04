@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_44"
+    android:background="@color/color_palmplay_white"
+    android:gravity="center_vertical">
+
+    <FrameLayout
+        android:id="@+id/layout_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_44"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:contentDescription="@string/empty"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="12dp"
+            android:paddingRight="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/selector_title_img_home_me" />
+
+        <ImageView
+            android:id="@+id/iv_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right|end"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_prompt"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!--标题-->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Megore"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_xbig"
+        android:visibility="visible" />
+</RelativeLayout> <!-- TOP SECRET -->

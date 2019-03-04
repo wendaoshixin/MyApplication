@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.transsnet.yogroup.yoads.core.YoNativeAdView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginHorizontal="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--ad_image-->
+        <ImageView
+            android:id="@+id/ad_image"
+            android:layout_marginTop="0dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="156dp" />
+
+        <LinearLayout
+            android:id="@+id/ad_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_55">
+
+            <!--ad_icon-->
+            <ImageView
+                android:id="@+id/ad_icon"
+                android:layout_width="@dimen/dp_55"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--ad_head_line-->
+                <TextView
+                    android:id="@+id/ad_head_line"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/noti_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--ad_body-->
+                <TextView
+                    android:id="@+id/ad_body"
+                    android:maxLines="2"
+                    android:textColor="@color/native_ad_body_color"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--ad_call_to_action-->
+        <Button
+            android:background="@drawable/shape_native_ad_btn"
+            android:id="@+id/ad_call_to_action"
+            android:text="@string/play"
+            android:layout_marginVertical="@dimen/dp_16"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</com.transsnet.yogroup.yoads.core.YoNativeAdView>

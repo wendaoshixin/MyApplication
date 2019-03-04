@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#008577</color>-->
+    <!--<color name="colorPrimaryDark">#00574B</color>-->
+    <!--<color name="colorAccent">#D81B60</color>-->
+    <color name="colorPrimary">#ffffffff</color>
+    <color name="colorPrimaryDark">#515151</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryLight">#B2EBF2</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+    <color name="thirdText">#b9757575</color>
+    <color name="foreground">#FFFFFF</color>
+    <color name="background">#fafafa</color>
+    <color name="divier">#1ebdbdbd</color>
+    <color name="translucence">#80FFFFFF</color>
+    <color name="transparency">#00000000</color>
+    <color name="colorCollected">#81ff0000</color>
+    <color name="colorTip">#f50000</color>
+    <color name="colorIndicator">#00BCD4</color>
+    <color name="colorBorder">#00BCD4</color>
+    <color name="colorNavBtmBackground">#FFFFFF</color>
+    <color name="colorNavBtmIconTint">#00BCD4</color>
+    <color name="colorNavBtmText">#9E9E9E</color>
+    <color name="colorEtHint">#b59e9e9e</color>
+    <color name="colorTrackOpen">#03A9F4</color>
+    <color name="colorTrackClose">#757575</color>
+    <color name="colorSwitchButton">#9E9E9E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorRipple">#B3E5FC</color>
+    <color name="colorPress">#6abdbdbd</color>
+    <color name="colorPressFg">#4fffffff</color>
+    <color name="colorDialogBackground">#FFFFFF</color>
+    <color name="toast_background">#c8535353</color>
+    <color name="colorTipBackground">#81fafafa</color>
+
+    <color name="app_list_white">#ffffffff</color>
+    <color name="app_list_unfocused">#cccccccc</color>
+
+
+    <color name="text_color_white">#FFFFFF</color>
+    <color name="home_btn_textcolor_pause">#ff666666</color>
+    <!-- <color name="home_btn_textcolor_continue">#fff78e2a</color> -->
+    <color name="home_btn_textcolor_continue">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="type_app_list_price_unselected_color">#ff4d30</color>
+    <color name="type_app_list_price_selected_color">#ff0000</color>
+    <color name="color_55000000">#55000000</color>
+    <color name="color_2E2E2E">#2E2E2E</color>
+    <color name="black">#000000</color>
+
+    <!-- add by HJG 2016-01-25 for PalmPlay v5.6 -->
+    <color name="color_palmplay_EDEDED">#EDEDED</color>
+    <color name="color_palmplay_DBDBDB">#DBDBDB</color>
+    <color name="color_palmplay_white">#ffffff</color>
+    <color name="color_palmplay_FF3126">#FF3126</color>
+    <color name="color_palmplay_F5F5F5">#f5f5f5</color>
+    <color name="color_palmplay_868892">#868892</color>
+    <color name="color_palmplay_17a5ef">#17a5ef</color>
+    <color name="color_palmplay_1198e9f">#1198e9</color>
+
+    <color name="color_c4c4c4">#c4c4c4</color>
+    <color name="color_242633">#242633</color>
+    <color name="color_9c9c9c">#9c9c9c</color>
+    <color name="color_9a9a9a">#9a9a9a</color>
+    <color name="color_f35858">#f35858</color>
+    <color name="color_787878">#787878</color>
+    <color name="color_34b140">#34b140</color>
+    <color name="color_868892">#868892</color>
+    <color name="color_0da472">#0da472</color>
+    <color name="color_BEBEBE">#BEBEBE</color>
+    <color name="color_D7D6DB">#D7D6DB</color>
+    <color name="color_b8b9bf">#b8b9bf</color>
+    <color name="color_E1E1E1">#E1E1E1</color>
+
+    <color name="color_D0D0D0">#D0D0D0</color>
+    <color name="color_E2E2E2">#E2E2E2</color>
+    <color name="color_D7D7D7">#D7D7D7</color>
+    <color name="color_F5F5F5">#F5F5F5</color>
+    <color name="color_94969f">#94969f</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_666666">#666666</color>
+
+    <color name="color_333333">#333333</color>
+    <color name="color_d8d8d8">#d8d8d8</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_242733">#242733</color>
+    <color name="color_d3d3d3">#d3d3d3</color>
+    <!--added by chengyu-->
+    <color name="color_e83828">#e83828</color>
+
+    <color name="color_blue">#17a5ef</color>
+    <color name="color_search_tag">#242633</color>
+
+    <color name="color_divider_line">@color/color_eeeeee</color>
+
+    <color name="color_rootview_bg">@color/color_F5F5F5</color>
+
+    <!-- dialog aty    begin -->
+    <color name="color_dialog_aty_title">@color/color_161616</color>
+    <color name="color_dialog_aty_message">@color/color_444444</color>
+    <color name="color_dialog_aty_checkbox_text">@color/color_444444</color>
+    <!--<color name="color_dialog_aty_layoutBottom_btn">@color/selector_color_dialog_check_function_btn_text</color>-->
+    <!-- dialog aty    end -->
+    <color name="color_unable_gray">#b8b9bf</color>
+
+    <color name="color_2f3243">#2f3243</color>
+    <color name="color_ed4a4a">#ed4a4a</color>
+    <color name="color_81bb48">#81bb48</color>
+    <color name="color_9fa0a6">#9fa0a6</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_ffaa00">#ffaa00</color>
+    <color name="color_ff3126">#ff3126</color>
+    <color name="color_d2eefc">#d2eefc</color>
+    <color name="color_f88a00">#f88a00</color>
+    <color name="color_009944">#009944</color>
+    <color name="color_161616">#161616</color>
+    <color name="color_747474">#747474</color>
+    <color name="color_eeeeee">#eeeeee</color>
+
+
+
+    <color name="tab_text_gray">#b2b2b2</color>
+    <color name="color_e93b3b">#e93b3b</color>
+    <color name="color_f0f0f0">#f0f0f0</color>
+    <color name="color_f6f6f6">#f6f6f6</color>
+    <color name="color_717171">#717171</color>
+    <color name="color_ececec">#ececec</color>
+    <color name="color_515151">#515151</color>
+    <color name="color_939393">#939393</color>
+
+    <color name="color_e1e1e1">#E1E1E1</color>
+    <color name="color_828282">#828282</color>
+
+    <color name="color_a3daf7">#a3daf7</color>
+    <color name="color_f7bbb6">#f7bbb6</color>
+    <color name="color_f9d182">#f9d182</color>
+    <color name="color_d4ccfa">#d4ccfa</color>
+    <color name="color_f8bbd0">#f8bbd0</color>
+    <color name="color_a8e3c9">#a8e3c9</color>
+    <color name="color_0a9beb">#0a9beb</color>
+    <color name="color_E83828">#E83828</color>
+    <color name="color_f4b027">#f4b027</color>
+    <color name="color_acd4f6">#acd4f6</color>
+    <color name="color_7e7e7e">#7e7e7e</color>
+    <color name="color_dbffff">#dbffff</color>
+    <color name="color_b8b8b8">#b8b8b8</color>
+    <color name="color_303030">#303030</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_fefefe">#fefefe</color>
+    <color name="color_e60012">#e60012</color>
+
+    <color name="color_8a8a8a">#8a8a8a</color>
+    <color name="color_0a0a0a">#0a0a0a</color>
+    <color name="color_a0a0a0">#a0a0a0</color>
+    <color name="color_a3a3a3">#a3a3a3</color>
+
+    <drawable name="color_1A000000">#1A000000</drawable>
+
+    <color name="color_995e00">#995e00</color>
+    <color name="color_a9a9a9">#a9a9a9</color>
+
+    <color name="color_087cbc">#087cbc</color>
+
+    <color name="transparent">#9000</color>
+    <color name="color_ff7f00">#ff7f00</color>
+    <color name="color_808080">#808080</color>
+    <color name="color_90000000">#90000000</color>
+    <color name="color_1099e9">#1099e9</color>
+    <color name="color_069fe7">#069fe7</color>
+    <color name="color_cdcdcd">#cdcdcd</color>
+    <color name="color_8e8e8e">#8e8e8e</color>
+    <color name="color_d0d0d0">#d0d0d0</color>
+    <color name="color_fff445">#fff445</color>
+    <color name="color_019def">#019def</color>
+    <color name="color_119aea">#119aea</color>
+    <color name="color_0e7bbb">#0e7bbb</color>
+
+    <color name="color_444444">#444444</color>
+    <color name="color_33bde7">#33bde7</color>
+    <color name="color_b3161616">#b3161616</color>
+
+    <color name="color_bbbbbb">#bbbbbb</color>
+    <color name="color_545454">#545454</color>
+
+    <color name="noti_title">#161616</color>
+    <color name="noti_msg">#737373</color>
+    <color name="native_ad_body_color">#999999</color>
+</resources>

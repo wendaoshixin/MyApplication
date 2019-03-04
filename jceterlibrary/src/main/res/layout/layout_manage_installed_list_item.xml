@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:background="@color/color_palmplay_white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp_08"
+    android:paddingLeft="@dimen/dp_08"
+    android:paddingEnd="@dimen/dp_16"
+    android:paddingRight="@dimen/dp_16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_for_applist_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_08"
+            android:layout_marginLeft="@dimen/dp_08"
+            android:contentDescription="@string/empty"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_loading_default_l" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/dp_12"
+            android:paddingStart="@dimen/dp_12"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_16"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_16">
+
+            <TextView
+                android:id="@+id/item_for_applist_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_03"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Yotube"
+                android:textColor="#161616"
+                android:textSize="@dimen/sp_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_07"
+                android:orientation="horizontal">
+
+                <!-- android:text="V" -->
+                <TextView
+                    android:id="@+id/item_for_applist_versions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/color_747474"
+                    android:textSize="@dimen/sp_12" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp_04"
+                    android:layout_marginLeft="@dimen/dp_04"
+                    android:layout_marginEnd="@dimen/dp_04"
+                    android:layout_marginRight="@dimen/dp_04"
+                    android:background="@color/color_747474"
+                    android:gravity="center_vertical" />
+
+                <!-- android:text="6.50MB" -->
+                <TextView
+                    android:id="@+id/item_for_applist_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/color_747474"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/manage_menu"
+            android:layout_width="68dp"
+            android:layout_height="@dimen/dp_28"
+            android:background="@drawable/selector_common_button"
+            android:gravity="center"
+            android:text="@string/text_uninstall"
+            android:textColor="@color/color_ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_divider_line_height"
+        android:layout_marginStart="@dimen/dp_08"
+        android:layout_marginLeft="@dimen/dp_08"
+        android:layout_marginEnd="@dimen/dp_0"
+        android:layout_marginRight="@dimen/dp_0"
+        android:background="@color/color_divider_line"
+        android:visibility="visible" />
+
+</LinearLayout><!-- TOP SECRET -->

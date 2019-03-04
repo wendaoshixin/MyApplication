@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.formats.NativeAppInstallAdView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/launcher_native_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/appinstall_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/launcher_ads_big_image_height_250dp"
+            android:gravity="center"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/appinstall_app_icon"
+            android:layout_width="@dimen/launcher_ads_icon_height_72dp"
+            android:layout_height="@dimen/launcher_ads_icon_height_72dp"
+            android:layout_below="@id/appinstall_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/launcher_ads_icon_marginTop_28dp" />
+
+        <TextView
+            android:id="@+id/appinstall_headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appinstall_app_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/launcher_ads_title_marginTop_20dp"
+            android:maxLines="2"
+            android:textColor="@color/color_161616"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/appinstall_stars"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appinstall_headline"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/launcher_ads_content_marginTop_12dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="4.5"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/appinstall_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appinstall_stars"
+            android:layout_marginTop="@dimen/launcher_ads_content_marginTop_12dp"
+            android:gravity="center"
+            android:textColor="@color/color_999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/appinstall_call_to_action"
+            android:layout_width="@dimen/launcher_ads_action_width_310d"
+            android:layout_height="@dimen/launcher_ads_action_height_44dp"
+            android:layout_below="@id/appinstall_body"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/launcher_ads_action_marginTop_24dp"
+            android:background="@drawable/btn_launcher_ads_ad_visit"
+            android:gravity="center"
+            android:text="@string/launcher_admob_ad_visit"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dp_01"-->
+        <!--android:layout_gravity="left|start|bottom"-->
+        <!--android:background="#e5e5e5" />-->
+</com.google.android.gms.ads.formats.NativeAppInstallAdView>

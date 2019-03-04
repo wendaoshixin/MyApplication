@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_detail_tital_gradient"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:visibility="visible"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_collapseMode="pin">
+
+        <include layout="@layout/layout_webview_title" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.megore.play.widget.customview.CustomWebView
+        android:id="@+id/custom_web_view"
+        android:layout_below="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.megore.play.widget.customview.CustomWebView>
+
+</RelativeLayout><!-- TOP SECRET -->

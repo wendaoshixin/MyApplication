@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--推荐相关-->
+    <LinearLayout
+        android:id="@+id/ll_recommend_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_tab_toolbar_height"
+            android:background="#0A9BEB" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_clean_bg_copy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#0A9BEB">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_size_copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="92dp">
+
+                        <TextView
+                            android:id="@+id/tv_size_copy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="52sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/tv_size_copy"
+                            android:layout_marginBottom="12dp"
+                            android:layout_toEndOf="@id/tv_size_copy"
+                            android:layout_toRightOf="@id/tv_size_copy"
+                            android:text="@string/text_released"
+                            android:textColor="#80ffffff"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_unit_copy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/tv_size_copy"
+                            android:layout_marginTop="12dp"
+                            android:layout_toEndOf="@id/tv_size_copy"
+                            android:layout_toRightOf="@id/tv_size_copy"
+                            android:textColor="#80ffffff"
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+    <!--清理相关-->
+    <RelativeLayout
+        android:id="@+id/rl_clean_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0A9BEB">
+
+        <LinearLayout
+            android:id="@+id/container_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="92dp">
+
+            <TextView
+                android:id="@+id/tv_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="52sp" />
+
+            <TextView
+                android:id="@+id/tv_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_size"
+                android:layout_marginBottom="12dp"
+                android:layout_toEndOf="@id/tv_size"
+                android:layout_toRightOf="@id/tv_size"
+                android:text="@string/text_release"
+                android:textColor="#80ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_size"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@id/tv_size"
+                android:layout_toRightOf="@id/tv_size"
+                android:textColor="#80ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <com.megore.play.widget.flyingstar.FlyingStarView
+            android:id="@+id/flyingStarView"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_above="@id/rl_size" />
+
+        <FrameLayout
+            android:id="@+id/container_anim_view"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_above="@id/rl_size"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:paddingTop="40dp">
+
+            <ImageView
+                android:id="@+id/round_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:alpha="0.6"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/img_clean_round_5" />
+
+            <ImageView
+                android:id="@+id/round_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/img_clean_round_4" />
+
+            <ImageView
+                android:id="@+id/round_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/img_clean_round_3" />
+
+            <ImageView
+                android:id="@+id/round_fourth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/img_clean_round_2" />
+
+            <ImageView
+                android:id="@+id/round_fifth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/img_clean_round_1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/img_rocket1" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_rocket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/img_rocket2"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_shield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/img_shield"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>
+
+
+
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_admob_skip"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:layout_gravity="top|right|end"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/btn_launcher_admob_ad_bg_skip"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_admob_skip_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="#f7c35b"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="12dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:gravity="center"
+        android:text="@string/launcher_admob_ad_skip"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+</LinearLayout>

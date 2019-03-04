@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/v_item_root"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <View
+        android:id="@+id/line_divider_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_divider_line_height"
+        android:background="@color/color_divider_line" />
+
+    <View
+        android:id="@+id/v_item_bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_08"
+        android:background="@color/color_f6f6f6" />
+
+    <View
+        android:id="@+id/line_divider_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_divider_line_height"
+        android:background="@color/color_divider_line" />
+<!--</LinearLayout>-->
+</merge>

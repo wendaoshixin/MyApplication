@@ -1,0 +1,14 @@
+<resources>
+
+    <!--<drawable name="drawable_def_app_icon">@drawable/img_default_applogo</drawable>-->
+    <drawable name="drawable_def_app_icon_2">@drawable/img_default_applogo_2</drawable>
+
+    <color name="def_bg_color_01">@color/color_a3daf7</color>
+    <color name="def_bg_color_02">@color/color_f7bbb6</color>
+    <color name="def_bg_color_03">@color/color_f9d182</color>
+    <color name="def_bg_color_04">@color/color_d4ccfa</color>
+    <color name="def_bg_color_05">@color/color_f8bbd0</color>
+    <color name="def_bg_color_06">@color/color_a8e3c9</color>
+
+
+</resources>

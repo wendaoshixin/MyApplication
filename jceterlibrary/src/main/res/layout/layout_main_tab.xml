@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/main_title_layout"
+        layout="@layout/layout_main_common_title_v6_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:id="@+id/container_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabs"
+        android:layout_below="@+id/main_title_layout"
+        android:layout_marginBottom="@dimen/bar_shadedownheight_size" />
+
+    <RadioGroup
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bottom"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <RadioButton
+            android:id="@+id/main_tab_home"
+            style="@style/MainTabLayoutStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_main_tab_icon_home"
+            android:text="@string/text_bottom_home" />
+
+        <RadioButton
+            android:id="@+id/main_tab_game"
+            style="@style/MainTabLayoutStyle"
+            android:drawableTop="@drawable/selector_main_tab_icon_game"
+            android:text="@string/text_bottom_game" />
+
+        <RadioButton
+            android:id="@+id/main_tab_app"
+            style="@style/MainTabLayoutStyle"
+            android:drawableTop="@drawable/selector_main_tab_icon_app"
+            android:text="@string/text_bottom_app" />
+
+        <RadioButton
+            android:id="@+id/main_tab_video"
+            style="@style/MainTabLayoutStyle"
+            android:drawableTop="@drawable/selector_main_tab_icon_video"
+            android:text="@string/text_bottom_video" />
+
+        <RadioButton
+            android:id="@+id/main_tab_fun"
+            style="@style/MainTabLayoutStyle"
+            android:drawableTop="@drawable/selector_main_tab_icon_fun"
+            android:text="@string/text_bottom_fun" />
+    </RadioGroup>
+
+</RelativeLayout><!-- TOP SECRET -->

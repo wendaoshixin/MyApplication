@@ -1,0 +1,118 @@
+<resources>
+
+    <!--App的base主题-->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbarStyle">@style/TitleToolbar</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TitleToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+
+    <!--全屏样式-->
+    <style name="FullScreenStyle" parent="AppBaseTheme">
+        <item name="android:windowIsTranslucent">false</item><!--android 8.0上，全屏和透明同时出现，会爆出异常-->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 兼容API 7-->
+        <item name="android:windowActionBar">false</item>
+        <!-- Activity全屏 开始-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--启动页的主题-->
+    <style name="LauncherStyle" parent="FullScreenStyle">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="drawer_item">
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/selector_drawer_item_bg</item>
+    </style>
+
+    <style name="drawer_item_text">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:textColor">@color/color_161616</item>
+        <item name="android:textSize">@dimen/font_size_big</item>
+    </style>
+
+    <style name="ThemeNoTitleBar" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ActivityTransparent.NoFullScreen" parent="ThemeNoTitleBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="CleanMemoryActivityStyle" parent="Theme.ActivityTransparent.NoFullScreen">
+        <item name="android:windowAnimationStyle">@style/CleanMemoryActivityAnimation</item>
+    </style>
+
+    <style name="CleanMemoryActivityAnimation" parent="@android:style/Animation.Activity">
+        <!--<item name="android:activityOpenEnterAnimation">@anim/fading_in</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>-->
+        <item name="android:taskOpenEnterAnimation">@anim/fading_in</item>
+        <item name="android:taskCloseExitAnimation">@anim/fading_out</item>
+    </style>
+
+    <style name="MainTabLayoutStyle">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:background">@drawable/selector_main_tab_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:drawablePadding">-4dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@drawable/selector_color_main_tab_text</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Widget.GifView" parent="@android:style/Widget" />
+
+    <style name="Theme.Dialog.Activity" parent="AppBaseTheme">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="TopTabTextStyle" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#717171</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="Base.TabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#e83828</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabTextAppearance">@style/TopTabTextStyle</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="Base.TabLayout">
+        <item name="tabSelectedTextColor">#e83828</item>
+        <item name="tabTextColor">@color/color_717171</item>
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:background">@color/text_color_white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_32</item>
+    </style>
+</resources>

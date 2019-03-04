@@ -1,0 +1,149 @@
+<resources>
+
+    <!--
+         Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels.
+    -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PalmPlayBadgeTextView">
+        <attr name="bvMinWidth" format="dimension" />
+        <attr name="bvMinHeight" format="dimension" />
+        <attr name="bvBackgroundColor" format="color" />
+        <attr name="bvIsAlwaysCircleBg" format="boolean" />
+        <attr name="bvIsCirclePointMode" format="boolean" />
+        <attr name="bvCirclePointWidth" format="dimension" />
+        <attr name="bvCirclePointHeight" format="dimension" />
+
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="debugDraw" format="boolean" />
+        <attr name="maxLines" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_newLine" format="boolean" />
+        <attr name="layout_horizontalSpacing" format="dimension" />
+        <attr name="layout_verticalSpacing" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TagLinearLayout">
+        <!-- <attr name="tag_layout_gravity" format="integer" />
+        <attr name="tag_gravity" format="integer" />
+        <attr name="tag_child_layout_gravity" format="integer" />
+        <attr name="tag_child_gravity" format="integer" /> -->
+        <attr name="tag_paddingLeft" format="dimension" />
+        <attr name="tag_paddingTop" format="dimension" />
+        <attr name="tag_paddingRight" format="dimension" />
+        <attr name="tag_paddingBottom" format="dimension" />
+        <attr name="tag_paddingStart" format="dimension" />
+        <attr name="tag_paddingEnd" format="dimension" />
+        <attr name="tag_marginLeft" format="dimension" />
+        <attr name="tag_marginTop" format="dimension" />
+        <attr name="tag_marginRight" format="dimension" />
+        <attr name="tag_marginBottom" format="dimension" />
+        <attr name="tag_marginStart" format="dimension" />
+        <attr name="tag_marginEnd" format="dimension" />
+        <attr name="tag_offsetWidth" format="dimension" />
+
+        <attr name="tag_childPaddingLeft" format="dimension" />
+        <attr name="tag_childPaddingTop" format="dimension" />
+        <attr name="tag_childPaddingRight" format="dimension" />
+        <attr name="tag_childPaddingBottom" format="dimension" />
+        <attr name="tag_childPaddingStart" format="dimension" />
+        <attr name="tag_childPaddingEnd" format="dimension" />
+        <attr name="tag_childMarginLeft" format="dimension" />
+        <attr name="tag_childMarginTop" format="dimension" />
+        <attr name="tag_childMarginRight" format="dimension" />
+        <attr name="tag_childMarginBottom" format="dimension" />
+        <attr name="tag_childMarginStart" format="dimension" />
+        <attr name="tag_childMarginEnd" format="dimension" />
+
+        <attr name="tag_childTextColor" format="color" />
+        <attr name="tag_childSelectedTextColor" format="color" />
+        <attr name="tag_childBackgroundResoure" format="reference" />
+        <attr name="tag_childSelectedBackgroundResoure" format="reference" />
+        <attr name="tag_childTextSize" format="integer" />
+
+
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BubbleImageView">
+
+        <!-- 箭头距离View的左边的距离 -->
+        <attr name="arrowStartMargin" format="dimension" />
+        <attr name="arrowWidth" format="dimension" />
+        <attr name="arrowHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="textIsDisplayable" format="boolean" />
+        <attr name="style">
+            <enum name="STROKE" value="0" />
+            <enum name="FILL" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingCustomTable">
+        <attr name="tabVisibleCount" format="integer"/>
+        <attr name="tabIndicatorColor" format="color"/>
+        <attr name="tabLastTabVisibleRatio" format="float"/>
+    </declare-styleable>
+
+
+    <!--recycler vire banner-->
+    <declare-styleable name="RecyclerViewBannerBase">
+        <attr name="interval" format="integer"/>
+        <attr name="showIndicator" format="boolean"/>
+        <attr name="indicatorSelectedSrc" format="color|reference"/>
+        <attr name="indicatorUnselectedSrc" format="color|reference"/>
+        <attr name="indicatorSpace" format="dimension|reference"/>
+        <attr name="indicatorMarginLeft" format="dimension|reference"/>
+        <attr name="indicatorMarginRight" format="dimension|reference"/>
+        <attr name="indicatorMarginBottom" format="dimension|reference"/>
+        <attr name="indicatorGravity" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="bannerOrientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="autoPlaying" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="animAlphaStart" format="float"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="collapseDrawable" format="reference"/>
+    </declare-styleable>
+
+</resources><!-- TOP SECRET -->

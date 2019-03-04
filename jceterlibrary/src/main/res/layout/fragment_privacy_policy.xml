@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        android:contentDescription="@string/empty"
+        android:scaleType="fitXY"
+        android:src="@mipmap/splash_logo" />
+
+    <TextView
+        android:id="@+id/enter"
+        android:layout_width="206dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/bg_agree_privacy"
+        android:gravity="center"
+        android:text="@string/agree_and_enter"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_privacy_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/enter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textColor="#8D8D8D"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_privacy_policy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:gravity="center"
+        android:text="@string/privacy_policy_prefix"
+        android:textColor="#8D8D8D"
+        android:textSize="13sp" />
+</RelativeLayout>

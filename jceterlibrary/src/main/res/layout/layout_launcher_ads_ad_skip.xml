@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_admob_skip"
+    android:layout_width="wrap_content"
+    android:layout_height="28dp"
+    android:layout_gravity="top|right|end"
+    android:layout_marginTop="@dimen/dp_12"
+    android:layout_marginEnd="@dimen/dp_12"
+    android:layout_marginRight="@dimen/dp_12"
+    android:background="@drawable/btn_launcher_ads_ad_skip"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="false"
+    android:gravity="center_vertical"
+    android:minWidth="@dimen/dp_64"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/dp_06"
+    android:paddingLeft="@dimen/dp_06"
+    android:paddingEnd="@dimen/dp_06"
+    android:paddingRight="@dimen/dp_06"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tv_admob_skip_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="#f7c35b"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="12dp"
+        android:background="#aaaaaa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:gravity="center"
+        android:text="@string/launcher_admob_ad_skip"
+        android:textColor="#8d8d8d"
+        android:textSize="13sp" />
+</LinearLayout>

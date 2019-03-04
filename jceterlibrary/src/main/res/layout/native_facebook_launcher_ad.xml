@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.ads.MediaView
+        android:id="@+id/native_ad_media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a6000000"
+        android:paddingStart="40dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingEnd="40dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/appinstall_call_to_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="72dp"
+            android:background="@drawable/btn_launcher_admob_ad_visit"
+            android:gravity="center"
+            android:text="@string/launcher_admob_ad_visit"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/appinstall_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/appinstall_call_to_action"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/appinstall_headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/appinstall_body"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="@dimen/dp_44"
+            android:maxLines="2"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.facebook.ads.AdIconView
+            android:id="@+id/appinstall_app_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_above="@id/appinstall_headline"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/img_download_manager_list_ebook" />
+
+        <TextView
+            android:id="@+id/native_ad_sponsored_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:padding="@dimen/advertising_margin_top_4dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/darker_gray"
+            android:layout_below="@+id/appinstall_app_icon"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ad_choices_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal" />
+
+    <include layout="@layout/layout_launcher_admob_skip" />
+
+
+    <LinearLayout
+        android:id="@+id/ad_logo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|start|bottom"
+        android:orientation="horizontal" >
+        <include layout="@layout/native_facebook_ad_textview_logo" />
+    </LinearLayout>
+</FrameLayout>

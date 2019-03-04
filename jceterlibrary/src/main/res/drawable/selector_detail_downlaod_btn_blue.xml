@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/download_btn_corners" />
+            <gradient android:startColor="#3e92cc" android:endColor="#5266cc"/>
+        </shape>
+    </item>
+
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/download_btn_corners" />
+            <gradient android:startColor="#3e92cc" android:endColor="#5266cc"/>
+        </shape>
+    </item>
+
+    <item >
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/download_btn_corners" />
+            <gradient android:startColor="#4cb8ff" android:endColor="#6680ff"/>
+        </shape>
+    </item>
+
+</selector>
